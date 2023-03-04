@@ -23,6 +23,6 @@ app.get("/addproduct",(req,res)=>{
 
     res.render("addproduct")
 })
-app.listen(3000,()=>{
+app.listen(process.env.PORT||3000,()=>{
     console.log("Server started at Port : 3000");
 })
